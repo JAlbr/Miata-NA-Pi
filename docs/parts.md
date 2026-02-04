@@ -1,0 +1,28 @@
+# Bill of Materials (BOM)
+
+This list is separated into parts that were purchased specifically for this project and parts that were scavenged from old electronics.
+
+## 🛒 Purchased Parts
+
+These are the core components you will need to buy to replicate the build.
+
+| Part Name | Model/Description | Notes |
+| :--- | :--- | :--- |
+| **CarPlay/Android Auto Adapter** | Carlinkit CPC200-CCPA | Must be this specific model ("Wireless") for hardware Android Auto support. |
+| **Main Computer** | Raspberry Pi 4 | Model B |
+| **Microcontroller** | DFRobot Beetle RP2350 | Used for handling vehicle signals (like ignition). |
+| **Primary Power Supply (5V)** | DFRobot 5A DC-DC Buck Converter (DFR0946) | High-quality converter to power the Pi and peripherals from the car's 12V. |
+| **Secondary Power Supply** | Mini DC-DC Adjustable Buck Converter | Small green module (MP2307 style) used for Ignition sensor/timer. |
+| **Relay** | 3.3V - 5V One-Channel Relay Module | Used to completely disconnect from car BAT |
+| **Buttons** | Colorful Round Tactile Button Switch Assortment (I got a 15 pack but we only need 2) | Used for volume and power button |
+| **Misc. Electronics** | Assorted Resistors and Diodes | *Specific values to be added later.* Used for signal pull-ups/downs and protection. |
+
+## ♻️ Scavenged / Recycled Parts
+
+I used these specific legacy parts because I had them on hand. If you are replicating this, you can look for these exact models on eBay or use the "Modern Equivalent" listed below.
+
+| Part Source | Specific Model Used | What Was Used / Modified | Modern Equivalent |
+| :--- | :--- | :--- | :--- |
+| **Speaker System** | **Logitech Z313** (2.1 System) | The internal amplifier board was removed from the subwoofer unit. The subwoofer was also repackaged and Installed in the Miata. | Any 12V Class-D Amplifier board (e.g., PAM8610) should work |
+| **Ground Isolator** | **MONACOR FGA-35** | Disassembled. The input was soldered directly to the USB sound card, and output to the amplifier, removing bulky connectors. | Any 3.5mm Ground Loop Isolator (GLI) |
+| **USB Audio** | **Old Logitech USB Dongle** | Vintage model (Green/Pink rings). Disassembled, original USB plug removed and replaced with a soldered custom-length cable. Aux ports desoldered for direct wiring. | Any Plug-and-Play USB Sound Card |
