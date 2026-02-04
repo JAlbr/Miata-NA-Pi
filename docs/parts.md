@@ -10,11 +10,14 @@ These are the core components you will need to buy to replicate the build.
 | :--- | :--- | :--- |
 | **CarPlay/Android Auto Adapter** | Carlinkit CPC200-CCPA | Must be this specific model ("Wireless") for hardware Android Auto support. |
 | **Main Computer** | Raspberry Pi 4 | Model B |
+| **Display** | Waveshare 7-inch IPS Touch (70H-1024600-IPS-CT-B) | "Thin & Light" version. Uses 40-pin FPC ribbon cable. Includes HDMI/USB adapter board. |
 | **Microcontroller** | DFRobot Beetle RP2350 | Used for handling vehicle signals (like ignition). |
 | **Primary Power Supply (5V)** | DFRobot 5A DC-DC Buck Converter (DFR0946) | High-quality converter to power the Pi and peripherals from the car's 12V. |
 | **Secondary Power Supply** | Mini DC-DC Adjustable Buck Converter | Small green module (MP2307 style) used for Ignition sensor/timer. |
 | **Relay** | 3.3V - 5V One-Channel Relay Module | Used to completely disconnect from car BAT |
 | **Buttons** | Colorful Round Tactile Button Switch Assortment (I got a 15 pack but we only need 2) | Used for volume and power button |
+| **Video Cable** | Micro HDMI to HDMI Cable | Short length (0.5m) recommended. Connects Pi 4 (Micro HDMI) to Screen Adapter (Standard HDMI). |
+| **Power Cable** | USB-C Cable (High Quality) | **To be cut in half.** The USB-C end plugs into the Pi; the cut Red/Black wires connect to the 5A Buck Converter output. |
 | **Misc. Electronics** | Assorted Resistors and Diodes | *Specific values to be added later.* Used for signal pull-ups/downs and protection. |
 
 ## ♻️ Scavenged / Recycled Parts
