@@ -2,16 +2,16 @@
 
 This project uses a custom power management circuit controlled by a **DFRobot Beetle (RP2350)**. This ensures the Raspberry Pi boots when the key is turned and shuts down safely when the key is removed, rather than just cutting power instantly (which corrupts SD cards).
 
-## ⚡ The Power Logic (The "Beetle Brain")
+## ⚡ The Power Logic
 
-The Beetle microcontroller acts as the brain. It needs to stay alive even after you turn the car off, just long enough to tell the Pi to shut down safely. To achieve this, we use a **"Diode OR-ing"** setup.
+The Beetle microcontroller acts as a timer. It needs to stay alive even after you turn the car off, at least long enough to tell the Pi to shut down safely. The current code has a 15min timer so it does not have to reboot at every time the ignition is off for a short time. To achieve this, we use a **"Diode OR-ing"** setup.
 
 ### 1. Power Sources for the Beetle
 The Beetle receives power from **two sources** through diodes (so they don't fight each other):
-1.  **Ignition Source:** From the **Green Mini Buck Converter** (powered by ACC fuse).
-    * *Logic:* When car is ON, Beetle is powered.
+1.  **Ignition Source:** From the **Green Mini Buck Converter**.
+    * *Logic:* When **IGN** is ON, Beetle is powered and connects the system to **Permanent**.
 2.  **System Source:** From the **Main DFRobot Buck Converter** (powered by Relay).
-    * *Logic:* When the Relay is active, Beetle is powered.
+    * *Logic:* When **IGN** is turned off, the Beetle is powered by the DFRobot Buck (System power) until it shuts down the PI and eventually          disconnects the entire system (including itself) from power (Relay OFF).
 
 **Result:** The Beetle stays on if *either* the Car is ON *or* the System is currently running.
 
