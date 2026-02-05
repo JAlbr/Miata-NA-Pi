@@ -2,7 +2,7 @@
 
 <img width="706" height="530" alt="Scematic" src="https://github.com/user-attachments/assets/c86538c3-4ab4-41dd-af37-5182f19f1640" />
 
-
+R1 -> 10kΩ, R2 -> 1.8kΩ, R3 -> 3.3kΩ, R4 -> 1kΩ, D1 = D2 -> IN4007
 
 This project uses a custom power management circuit controlled by a **DFRobot Beetle (RP2350)**. This ensures the Raspberry Pi boots when the key is turned and shuts down safely when the key is removed, rather than just cutting power instantly (which corrupts SD cards).
 
