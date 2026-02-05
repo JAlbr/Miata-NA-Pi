@@ -17,8 +17,9 @@ These are the core components you will need to buy to replicate the build.
 | **Relay** | 3.3V - 5V One-Channel Relay Module | Used to completely disconnect from car BAT |
 | **Buttons** | Colorful Round Tactile Button Switch Assortment (I got a 15 pack but we only need 2) | Used for volume and power button |
 | **Video Cable** | Micro HDMI to HDMI Cable | Short length (0.5m) recommended. Connects Pi 4 (Micro HDMI) to Screen Adapter (Standard HDMI). |
-| **Power Cable** | USB-C Cable (High Quality) | **To be cut in half.** The USB-C end plugs into the Pi; the cut Red/Black wires connect to the 5A Buck Converter output. |
-| **Misc. Electronics** | Assorted Resistors and Diodes | *Specific values to be added later.* Used for signal pull-ups/downs and protection. |
+| **Power Cable** | USB-C Cable | To be cut in half. **Optional**, the Pi can also be powered over the Pins |
+| **Diodes** | 2 x IN4007 Diodes | Used for the dual power supply of the Bettle |
+| **Resistors** | 1.8kΩ, 3.3kΩ, 10kΩ, 1kΩ | For the Voltage divider and some other connections. |
 
 ## ♻️ Scavenged / Recycled Parts
 
